@@ -76,7 +76,7 @@
         <main class="table">
             <section class="table_header table_header2">
                 <h1>Dealer's Orders</h1>
-                <h1>Total Earnings: ₹ {{user.earnings}}</h1>
+                <h1>Total Earnings: KES {{user.earnings}}</h1>
             </section>
             {% if orders %}
             <section class="table_body">
@@ -105,7 +105,7 @@
                             <td>{{ ords.order.order_date }}<br>{{ ords.order.location }}</td>
                             <td>{{ ords.customer.firstname }} {{ ords.customer.lastname }}<br>{{ ords.customer.phoneno }}</td>
                             <td><p class="status {{ ords.order.status }}">{{ ords.order.status }}</p></td>
-                            <td><strong>₹ {{ ords.order.total_rent }}</strong></td>
+                            <td><strong>KES {{ ords.order.total_rent }}</strong></td>
                         </tr>
                         {% endfor %}
                     </tbody>

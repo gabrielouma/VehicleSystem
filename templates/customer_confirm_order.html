@@ -79,7 +79,7 @@
                 <img src="{% static 'vehicle_images/' %}{{vehicle.image}}" alt="{{vehicle.vehicle_type}}">
                 <div class="card_body">
                     <h3 class="card_title">{{vehicle.vehicle_type}} Name: {{vehicle.name}}</h3>
-                    <p class="card_details"><b>{{vehicle.vehicle_type}} Dealer: </b>{{dealer.firstname}} {{dealer.lastname}}<br><b>Rent: </b>₹ {{vehicle.rent}} per day</p>
+                    <p class="card_details"><b>{{vehicle.vehicle_type}} Dealer: </b>{{dealer.firstname}} {{dealer.lastname}}<br><b>Rent: </b>KES {{vehicle.rent}} per day</p>
                     <p class="card_details"><b>Location: </b>{{vehicle.location}}</p>
                     <form method="post" action="/order_details/">
                         {% csrf_token %}

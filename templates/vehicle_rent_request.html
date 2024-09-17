@@ -97,7 +97,7 @@
                 <div class="card_body">
                     <h3 class="card_title">{{ info.order.vehicle_name }}({{ info.order.vehicle_type }})</h3>
                     <p class="card_details"><b>Dealer Name: </b>{{ info.dealer.firstname }} {{ info.dealer.lastname }}<br><b>Contact: </b>{{ info.dealer.phoneno }}<br><b>Capacity: </b>{{ info.order.capacity }}</p>
-                    <p class="card_details"><b>Days: </b>{{ info.order.days }}<br><b>Amount: </b>₹ {{ info.order.total_rent }}</p>
+                    <p class="card_details"><b>Days: </b>{{ info.order.days }}<br><b>Amount: </b>KES {{ info.order.total_rent }}</p>
                     <div class="action-buttons">
                         {% if info.order.status == "accepted" %}
                         <form action="/complete_rent_request/" method="post" style="width: 100%;">
@@ -133,7 +133,7 @@
                 <div class="card_body">
                     <h3 class="card_title">{{ info.order.vehicle_name }}({{ info.order.vehicle_type }})</h3>
                     <p class="card_details"><b>Customer Name: </b>{{ info.customer.firstname }} {{ info.customer.lastname }}<br><b>Contact: </b>{{ info.customer.phoneno }}<br><b>Capacity: </b>{{ info.order.capacity }}</p>
-                    <p class="card_details"><b>Days: </b>{{ info.order.days }}<br><b>Amount: </b>₹ {{ info.order.total_rent }}</p>
+                    <p class="card_details"><b>Days: </b>{{ info.order.days }}<br><b>Amount: </b>KES {{ info.order.total_rent }}</p>
                     <div class="action-buttons">
                         {% if info.order.status == "accepted" %}
                         <form style="width: 100%;">

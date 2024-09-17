@@ -92,7 +92,7 @@
                 <img src="{% static 'vehicle_images/' %}{{ vehicle.vehicle.image }}" alt="{{ vehicle.vehicle.vehicle_type }}">
                 <div class="card_body">
                     <h3 class="card_title">{{ vehicle.vehicle.vehicle_type }} Name: {{ vehicle.vehicle.name }}</h3>
-                    <p class="card_details"><b>{{ vehicle.vehicle.vehicle_type }} Dealer: </b>{{ vehicle.dealer.firstname }} {{ vehicle.dealer.lastname }}<br><b>Rent: </b>₹ {{ vehicle.vehicle.rent }} per day</p>
+                    <p class="card_details"><b>{{ vehicle.vehicle.vehicle_type }} Dealer: </b>{{ vehicle.dealer.firstname }} {{ vehicle.dealer.lastname }}<br><b>Rent: </b>KES {{ vehicle.vehicle.rent }} per day</p>
                     <p class="card_details location"><b>Location: </b>{{ vehicle.vehicle.location }}</p>
                     <div class="rent_btn">
                         <form action = "/vehicle_rent/" method="post">

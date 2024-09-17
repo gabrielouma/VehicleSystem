@@ -102,7 +102,7 @@
                             <td><img src="{% static 'vehicle_images/' %}{{ vehicle.image }}" alt="vehicle image"></td>
                             <td>{{ vehicle.location }}</td>
                             <td>{{ vehicle.capacity }}</td>
-                            <td><strong>₹ {{ vehicle.rent }}</strong></td>
+                            <td><strong>KES {{ vehicle.rent }}</strong></td>
                             <td><a href="/edit_vehicle/{{ vehicle.vehicle_id }}/" style="--action-clr: #0026ff;" onclick="return confirm('Are you sure you want to edit this {{ vehicle.vehicle_type }} ?')"><i class="fa-solid fa-pen-to-square"></i></a></td>
                             <td><a href="/delete_vehicle/{{ vehicle.vehicle_id }}/" style="--action-clr: #ff0000;" onclick="return confirm('Are you sure you want to delete this {{ vehicle.vehicle_type }} ?')"><i class="fas fa-trash"></i></a></td>
                         </tr>
